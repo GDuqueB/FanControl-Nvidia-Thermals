@@ -2,7 +2,11 @@
 
 English | [Español](#spanish)
 
-## Contents
+<table>
+  <tr>
+    <td valign="top">
+
+### Contents
 
 - [English](#english)
 - [Why this exists](#why-this-exists)
@@ -15,7 +19,10 @@ English | [Español](#spanish)
 - [Legal note](#legal-note)
 - [License](#license)
 
-## Índice
+  </td>
+  <td valign="top">
+
+### Índice
 
 - [Español](#spanish)
 - [Por qué existe](#por-qué-existe)
@@ -27,6 +34,10 @@ English | [Español](#spanish)
 - [Estructura del repositorio](#estructura-del-repositorio)
 - [Nota legal](#nota-legal)
 - [Licencia](#licencia)
+
+  </td>
+  </tr>
+</table>
 
 `FanControl.NvidiaThermals` is a FanControl plugin for NVIDIA GPUs that exposes:
 
