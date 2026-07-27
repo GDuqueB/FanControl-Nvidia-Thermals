@@ -4,7 +4,7 @@ English | [Español](#spanish)
 
 <table>
   <tr>
-    <td valign="top">
+    <td valign="top" width="50%">
 
 ### Contents
 
@@ -20,7 +20,7 @@ English | [Español](#spanish)
 - [License](#license)
 
   </td>
-  <td valign="top">
+  <td valign="top" width="50%">
 
 ### Índice
 
