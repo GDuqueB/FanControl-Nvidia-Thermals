@@ -2,42 +2,18 @@
 
 English | [Español](#spanish)
 
-<table width="100%">
-  <tr>
-    <td valign="top" width="50%">
-
-### Contents
-
-- [English](#english)
-- [Why this exists](#why-this-exists)
-- [Current status](#current-status)
-- [Compatibility](#compatibility)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Diagnostics](#diagnostics)
-- [Repository layout](#repository-layout)
-- [Legal note](#legal-note)
-- [License](#license)
-
-  </td>
-  <td valign="top" width="50%">
-
-### Índice
-
-- [Español](#spanish)
-- [Por qué existe](#por-qué-existe)
-- [Estado actual](#estado-actual)
-- [Compatibilidad](#compatibilidad)
-- [Requisitos](#requisitos)
-- [Instalación](#instalación)
-- [Diagnóstico](#diagnóstico)
-- [Estructura del repositorio](#estructura-del-repositorio)
-- [Nota legal](#nota-legal)
-- [Licencia](#licencia)
-
-  </td>
-  </tr>
-</table>
+| Contents | Índice |
+| --- | --- |
+| [English](#english) | [Español](#spanish) |
+| [Why this exists](#why-this-exists) | [Por qué existe](#por-qué-existe) |
+| [Current status](#current-status) | [Estado actual](#estado-actual) |
+| [Compatibility](#compatibility) | [Compatibilidad](#compatibilidad) |
+| [Requirements](#requirements) | [Requisitos](#requisitos) |
+| [Installation](#installation) | [Instalación](#instalación) |
+| [Diagnostics](#diagnostics) | [Diagnóstico](#diagnóstico) |
+| [Repository layout](#repository-layout) | [Estructura del repositorio](#estructura-del-repositorio) |
+| [Legal note](#legal-note) | [Nota legal](#nota-legal) |
+| [License](#license) | [Licencia](#licencia) |
 
 `FanControl.NvidiaThermals` is a FanControl plugin for NVIDIA GPUs that exposes:
 
