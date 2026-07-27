@@ -1,6 +1,32 @@
 # FanControl.NvidiaThermals
 
-English | [Español](#español)
+English | [Español](#spanish)
+
+## Contents
+
+- [English](#english)
+- [Why this exists](#why-this-exists)
+- [Current status](#current-status)
+- [Compatibility](#compatibility)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Diagnostics](#diagnostics)
+- [Repository layout](#repository-layout)
+- [Legal note](#legal-note)
+- [License](#license)
+
+## Índice
+
+- [Español](#spanish)
+- [Por qué existe](#por-qué-existe)
+- [Estado actual](#estado-actual)
+- [Compatibilidad](#compatibilidad)
+- [Requisitos](#requisitos)
+- [Instalación](#instalación)
+- [Diagnóstico](#diagnóstico)
+- [Estructura del repositorio](#estructura-del-repositorio)
+- [Nota legal](#nota-legal)
+- [Licencia](#licencia)
 
 `FanControl.NvidiaThermals` is a FanControl plugin for NVIDIA GPUs that exposes:
 
@@ -9,6 +35,8 @@ English | [Español](#español)
 - `GPU Hot Spot`
 
 The project exists to provide these temperatures directly inside FanControl without depending on GPU-Z or HWMonitor running in the background.
+
+<a id="english"></a>
 
 ## English
 
@@ -104,6 +132,8 @@ A good public setup is:
 This project is published under the `MIT` license.
 
 Publishing notes are available in [docs/GITHUB-PUBLISHING.md](C:/Users/DEEP/Documents/HWMonitor/docs/GITHUB-PUBLISHING.md).
+
+<a id="spanish"></a>
 
 ## Español
 
