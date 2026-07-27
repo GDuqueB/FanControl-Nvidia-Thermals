@@ -47,6 +47,10 @@ English | [Español](#spanish)
 
 The project exists to provide these temperatures directly inside FanControl without depending on GPU-Z or HWMonitor running in the background.
 
+<p align="center">
+  <img src="docs/images/fancontrol-curves-preview.png" alt="FanControl using VRAM, Core and Hot Spot sensors with a mixed curve" width="1200">
+</p>
+
 <a id="english"></a>
 
 ## English
