@@ -1,6 +1,6 @@
 # FanControl.NvidiaThermals
 
-English | [Español](#espanol)
+English | [Español](#español)
 
 `FanControl.NvidiaThermals` is a FanControl plugin for NVIDIA GPUs that exposes:
 
@@ -105,7 +105,7 @@ This project is published under the `MIT` license.
 
 Publishing notes are available in [docs/GITHUB-PUBLISHING.md](C:/Users/DEEP/Documents/HWMonitor/docs/GITHUB-PUBLISHING.md).
 
-## Espanol
+## Español
 
 `FanControl.NvidiaThermals` es un plugin para FanControl orientado a GPUs NVIDIA que expone:
 
@@ -113,13 +113,13 @@ Publishing notes are available in [docs/GITHUB-PUBLISHING.md](C:/Users/DEEP/Docu
 - `GPU Memory Junction`
 - `GPU Hot Spot`
 
-El objetivo del proyecto es ofrecer estas temperaturas directamente dentro de FanControl sin depender de GPU-Z ni de HWMonitor ejecutándose en segundo plano.
+El objetivo del proyecto es ofrecer estas temperaturas directamente en FanControl, sin depender de GPU-Z ni de HWMonitor ejecutándose en segundo plano.
 
-### Por que existe
+### Por qué existe
 
-Los cambios recientes en los drivers de NVIDIA rompieron la antigua ruta de lectura de Hot Spot usada por `FanControl.NvThermalSensors`. En las RTX 50, el valor de Hot Spot sigue pudiéndose leer de forma fiable mediante un módulo firmado de PawnIO, mientras que Core y Memory Junction siguen disponibles por NVAPI.
+Los cambios recientes en los drivers de NVIDIA rompieron la antigua ruta de lectura de Hot Spot usada por `FanControl.NvThermalSensors`. En las RTX 50, el valor de Hot Spot sigue pudiéndose leer de forma fiable mediante un módulo firmado de PawnIO, mientras que las temperaturas de Core y Memory Junction siguen disponibles a través de NVAPI.
 
-Este plugin combina ambas vías:
+Este plugin combina ambas fuentes:
 
 - `NVAPI` para `GPU Core`
 - `NVAPI` para `GPU Memory Junction`
@@ -141,19 +141,19 @@ Este plugin combina ambas vías:
   - `GPU Core`: compatible
   - `GPU Memory Junction`: compatible
   - `GPU Hot Spot`: usa la ruta térmica de NVAPI
-- `Generaciones NVIDIA anteriores`
-  - El plugin incluye lógica de fallback, pero todavía no se ha validado en suficiente hardware como para asegurar compatibilidad total.
+- `Generaciones anteriores de NVIDIA`
+  - El plugin incluye lógica de fallback, pero todavía no se ha validado en suficiente hardware como para asegurar una compatibilidad total.
 
 Nota importante:
 
-- El código está pensado para soportar más modelos aparte de la RTX 5090, pero la validación real más fuerte hasta ahora sigue siendo una RTX 5090 Founders Edition.
+- El código está pensado para soportar más modelos además de la RTX 5090, pero la validación real más sólida hasta ahora sigue siendo una RTX 5090 Founders Edition.
 
 ### Requisitos
 
 - Windows
 - FanControl
 - GPU NVIDIA
-- `PawnIO` instalado si quieres `GPU Hot Spot` en RTX 50
+- `PawnIO` instalado si quieres disponer de `GPU Hot Spot` en RTX 50
 - Módulo oficial firmado `Nvidia.bin` de PawnIO
 
 ### Instalación
@@ -194,13 +194,13 @@ Cosas útiles que revisar en el log:
 
 ### Nota legal
 
-Este repositorio debe contener el código fuente del plugin, pero es mejor no publicar binarios firmados de terceros como `Nvidia.bin` o `PawnIOLib.dll` salvo que su licencia permita claramente su redistribución.
+Este repositorio está pensado para publicar el código fuente del plugin. Aun así, es preferible no incluir binarios firmados de terceros, como `Nvidia.bin` o `PawnIOLib.dll`, salvo que su licencia permita de forma expresa su redistribución.
 
-Una configuración pública recomendable es:
+Una configuración pública recomendable sería:
 
 - centrar el repositorio en código fuente y documentación
 - aportar instrucciones de compilación
-- explicar de dónde debe obtener el usuario `PawnIO` y `Nvidia.bin`
+- explicar de dónde puede obtener el usuario `PawnIO` y `Nvidia.bin`
 
 ### Licencia
 
