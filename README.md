@@ -51,6 +51,18 @@ The project exists to provide these temperatures directly inside FanControl with
   <img src="docs/images/fancontrol-curves-preview.png" alt="FanControl using VRAM, Core and Hot Spot sensors with a mixed curve" width="1200">
 </p>
 
+<p align="center">
+  Mixed GPU fan curve built from VRAM, Core and Hot Spot sensors.
+</p>
+
+<p align="center">
+  <img src="docs/images/fancontrol-sensor-selection.png" alt="FanControl showing NVIDIA Thermal Bridge sensors in the sensor selection list" width="1000">
+</p>
+
+<p align="center">
+  Sensor selection inside FanControl, showing NVIDIA Thermal Bridge readings exposed by the plugin.
+</p>
+
 <a id="english"></a>
 
 ## English
