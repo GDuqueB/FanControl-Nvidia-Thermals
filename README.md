@@ -23,7 +23,7 @@ English | [Español](#spanish)
 
 The project exists to provide these temperatures directly inside FanControl without depending on GPU-Z, HWMonitor or other monitoring tools running permanently in the background.
 
-On NVIDIA RTX 50 GPUs, access to the Hot Spot metric became much more fragile than in previous generations. Monitoring tools could still expose it for some time, but FanControl-oriented solutions either depended on external software staying open in Windows or stopped working after later NVIDIA driver changes.
+On NVIDIA RTX 50 GPUs, NVIDIA effectively removed normal access to the `GPU Hot Spot` metric. Mainstream monitoring tools could no longer expose it through their usual paths, and the solutions that appeared afterwards came from community efforts rather than from an officially stable interface.
 
 This plugin is designed to restore reliable access to `GPU Hot Spot` together with `GPU Core` and `GPU Memory Junction`, so FanControl can build GPU cooling curves from the hottest point of the card, either as a single control metric or combined with other temperatures.
 
@@ -49,9 +49,9 @@ This plugin is designed to restore reliable access to `GPU Hot Spot` together wi
 
 ### Why this exists
 
-With the RTX 50 generation, NVIDIA changed the landscape around Hot Spot access. The metric could still be obtained through some monitoring tools such as GPU-Z, HWMonitor or HWiNFO, but integrating it cleanly into FanControl became much harder.
+With the RTX 50 generation, NVIDIA effectively removed normal access to the `GPU Hot Spot` metric. Tools such as GPU-Z, HWMonitor or HWiNFO could no longer expose it through the usual public path, so integrating it cleanly into FanControl stopped being straightforward.
 
-Some workarounds appeared, including `FanControl.NvThermalSensors`, but they either depended on additional software staying open in Windows or eventually broke after successive NVIDIA driver updates.
+Community workarounds appeared, including `FanControl.NvThermalSensors`, but they either depended on additional software staying open in Windows or eventually broke again after successive NVIDIA driver updates.
 
 That matters because `GPU Hot Spot` is an important control signal: it lets you modulate GPU cooling from the highest thermal point on the card, either as the only reference or in combination with `GPU Core` and `GPU Memory Junction`, which gives much more reliable control over GPU cooling behaviour.
 
@@ -158,15 +158,15 @@ Publishing notes are available in [docs/GITHUB-PUBLISHING.md](C:/Users/DEEP/Docu
 
 El objetivo del proyecto es ofrecer estas temperaturas directamente en FanControl, sin depender de GPU-Z, HWMonitor u otras herramientas de monitorización ejecutándose de forma permanente en segundo plano.
 
-Con las NVIDIA RTX 50, el acceso a la métrica de Hot Spot se volvió mucho más frágil que en generaciones anteriores. Durante un tiempo algunos programas de monitorización siguieron mostrando esa lectura, pero las soluciones pensadas para FanControl pasaron a depender de software externo abierto en Windows o dejaron de funcionar con posteriores cambios en los drivers de NVIDIA.
+Con las NVIDIA RTX 50, NVIDIA retiró de hecho el acceso normal a la métrica de `GPU Hot Spot`. Las herramientas de monitorización dejaron de poder exponerla por la vía habitual, y las soluciones que aparecieron después procedieron de iniciativas de la comunidad, no de una interfaz oficialmente estable.
 
 Este plugin busca recuperar un acceso fiable a `GPU Hot Spot` junto con `GPU Core` y `GPU Memory Junction`, de modo que FanControl pueda construir curvas de refrigeración de la GPU a partir del punto más caliente de la tarjeta, bien como criterio único, bien combinado con otras temperaturas.
 
 ### Por qué existe
 
-Con la generación RTX 50, NVIDIA cambió el panorama de acceso a la métrica de Hot Spot. Algunos programas de monitorización, como GPU-Z, HWMonitor o HWiNFO, siguieron pudiendo mostrarla durante un tiempo, pero integrarla de forma limpia dentro de FanControl se volvió bastante más difícil.
+Con la generación RTX 50, NVIDIA retiró de hecho el acceso normal a la métrica de `GPU Hot Spot`. Herramientas como GPU-Z, HWMonitor o HWiNFO dejaron de poder exponerla por la vía pública habitual, de modo que integrarla de forma limpia dentro de FanControl dejó de ser algo directo.
 
-Aparecieron algunas soluciones intermedias, como `FanControl.NvThermalSensors`, pero dependían de software adicional abierto en Windows o terminaron dejando de funcionar con las sucesivas actualizaciones de drivers de NVIDIA.
+Aparecieron algunas soluciones comunitarias, como `FanControl.NvThermalSensors`, pero dependían de software adicional abierto en Windows o terminaron fallando de nuevo con las sucesivas actualizaciones de drivers de NVIDIA.
 
 Y eso importa, porque `GPU Hot Spot` es una señal térmica muy valiosa: permite modular la refrigeración de la GPU en función del punto de temperatura más alto de la tarjeta, bien como referencia única, bien en combinación con `GPU Core` y `GPU Memory Junction`, lo que da un control mucho más fiable del comportamiento térmico de la GPU.
 
