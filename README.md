@@ -91,20 +91,21 @@ Important note:
 - Windows
 - FanControl
 - NVIDIA GPU
-- `PawnIO` installed if you want `GPU Hot Spot` on RTX 50
+- Modern FanControl version (`V238` or newer recommended)
 - Official signed `Nvidia.bin` module from PawnIO
+
+On modern FanControl versions (`V238` and newer), a PawnIO-based LibreHardwareMonitor backend is already included, so a separate PawnIO installation is usually not required.
 
 ### Installation
 
-1. Install `PawnIO`.
-2. Place `FanControl.NvidiaThermals.dll` in your FanControl plugin folder.
-3. Place `Nvidia.bin` in one of these locations:
+1. Place `FanControl.NvidiaThermals.dll` in your FanControl plugin folder.
+2. Place `Nvidia.bin` in one of these locations:
    - next to the plugin DLL
    - inside a `modules` folder next to the plugin DLL
    - inside the FanControl base folder
    - inside `C:\Program Files\PawnIO\Modules\`
-4. Restart FanControl.
-5. Look for these sensors:
+3. Restart FanControl.
+4. Look for these sensors:
    - `GPU Core`
    - `GPU Memory Junction`
    - `GPU Hot Spot`
@@ -132,7 +133,7 @@ Useful things to check in the log:
 
 ### Legal note
 
-This repository focuses primarily on source code and documentation. The release package includes `Nvidia.bin` for convenience, but does not include `PawnIOLib.dll`. `PawnIO` must still be installed separately on the target system.
+This repository focuses primarily on source code and documentation. The release package includes `Nvidia.bin` for convenience, but does not include `PawnIOLib.dll`. On modern FanControl versions (`V238` and newer), a separate PawnIO installation is usually not required.
 
 ### License
 
@@ -200,20 +201,21 @@ Nota importante:
 - Windows
 - FanControl
 - GPU NVIDIA
-- `PawnIO` instalado si quieres disponer de `GPU Hot Spot` en RTX 50
+- Versión moderna de FanControl (`V238` o superior recomendada)
 - Módulo oficial firmado `Nvidia.bin` de PawnIO
+
+En versiones modernas de FanControl (`V238` o superiores), ya se incluye un backend de LibreHardwareMonitor basado en PawnIO, por lo que normalmente no hace falta instalar PawnIO por separado.
 
 ### Instalación
 
-1. Instala `PawnIO`.
-2. Coloca `FanControl.NvidiaThermals.dll` en la carpeta de plugins de FanControl.
-3. Coloca `Nvidia.bin` en una de estas ubicaciones:
+1. Coloca `FanControl.NvidiaThermals.dll` en la carpeta de plugins de FanControl.
+2. Coloca `Nvidia.bin` en una de estas ubicaciones:
    - junto al DLL del plugin
    - dentro de una carpeta `modules` junto al DLL del plugin
    - dentro de la carpeta base de FanControl
    - dentro de `C:\Program Files\PawnIO\Modules\`
-4. Reinicia FanControl.
-5. Busca estos sensores:
+3. Reinicia FanControl.
+4. Busca estos sensores:
    - `GPU Core`
    - `GPU Memory Junction`
    - `GPU Hot Spot`
@@ -241,7 +243,7 @@ Cosas útiles que revisar en el log:
 
 ### Nota legal
 
-Este repositorio se centra principalmente en el código fuente y la documentación. El paquete de la release incluye `Nvidia.bin` para facilitar la instalación, pero no incluye `PawnIOLib.dll`. `PawnIO` debe seguir instalándose por separado en el sistema de destino.
+Este repositorio se centra principalmente en el código fuente y la documentación. El paquete de la release incluye `Nvidia.bin` para facilitar la instalación, pero no incluye `PawnIOLib.dll`. En versiones modernas de FanControl (`V238` o superiores), normalmente no hace falta instalar PawnIO por separado.
 
 ### Licencia
 
