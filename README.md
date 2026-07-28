@@ -157,6 +157,22 @@ Con las NVIDIA RTX 50, NVIDIA retiró de hecho el acceso normal a la métrica de
 
 Este plugin busca recuperar un acceso fiable a `GPU Hot Spot` junto con `GPU Core` y `GPU Memory Junction`, de modo que FanControl pueda construir curvas de refrigeración de la GPU a partir del punto más caliente de la tarjeta, bien como criterio único, bien combinado con otras temperaturas.
 
+<p align="center">
+  <img src="docs/images/fancontrol-curves-preview.png" alt="FanControl usando sensores de VRAM, Core y Hot Spot con una curva combinada" width="1200">
+</p>
+
+<p align="center">
+  <em>Ejemplo de curvas de FanControl basadas en VRAM, GPU Core y GPU Hot Spot.</em>
+</p>
+
+<p align="center">
+  <img src="docs/images/fancontrol-sensor-selection.png" alt="FanControl mostrando los sensores de NVIDIA Thermal Bridge en la lista de selección" width="1000">
+</p>
+
+<p align="center">
+  <em>Los tres sensores del plugin disponibles directamente al seleccionar una fuente de temperatura.</em>
+</p>
+
 ### Por qué existe
 
 Con la generación RTX 50, NVIDIA retiró de hecho el acceso normal a la métrica de `GPU Hot Spot`. Herramientas como GPU-Z, HWMonitor o HWiNFO dejaron de poder exponerla por la vía pública habitual, de modo que integrarla de forma limpia dentro de FanControl dejó de ser algo directo.
