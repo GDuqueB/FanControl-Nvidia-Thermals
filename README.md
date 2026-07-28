@@ -132,13 +132,7 @@ Useful things to check in the log:
 
 ### Legal note
 
-This repository should contain the plugin source code, but it is better not to publish third-party signed binaries such as `Nvidia.bin` or `PawnIOLib.dll` unless their license clearly allows redistribution.
-
-A good public setup is:
-
-- keep this repository focused on source code and documentation
-- provide build instructions
-- explain where users must obtain `PawnIO` and `Nvidia.bin`
+This repository focuses primarily on source code and documentation. The release package includes `Nvidia.bin` for convenience, but does not include `PawnIOLib.dll`. `PawnIO` must still be installed separately on the target system.
 
 ### License
 
@@ -247,13 +241,7 @@ Cosas útiles que revisar en el log:
 
 ### Nota legal
 
-Este repositorio está pensado para publicar el código fuente del plugin. Aun así, es preferible no incluir binarios firmados de terceros, como `Nvidia.bin` o `PawnIOLib.dll`, salvo que su licencia permita de forma expresa su redistribución.
-
-Una configuración pública recomendable sería:
-
-- centrar el repositorio en código fuente y documentación
-- aportar instrucciones de compilación
-- explicar de dónde puede obtener el usuario `PawnIO` y `Nvidia.bin`
+Este repositorio se centra principalmente en el código fuente y la documentación. El paquete de la release incluye `Nvidia.bin` para facilitar la instalación, pero no incluye `PawnIOLib.dll`. `PawnIO` debe seguir instalándose por separado en el sistema de destino.
 
 ### Licencia
 
