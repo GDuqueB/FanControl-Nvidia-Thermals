@@ -21,11 +21,7 @@ English | [Español](#spanish)
 - `GPU Memory Junction`
 - `GPU Hot Spot`
 
-The project exists to provide these temperatures directly inside FanControl without depending on GPU-Z, HWMonitor or other monitoring tools running permanently in the background.
-
-On NVIDIA RTX 50 GPUs, NVIDIA effectively removed normal access to the `GPU Hot Spot` metric. Mainstream monitoring tools could no longer expose it through their usual paths, and the solutions that appeared afterwards came from community efforts rather than from an officially stable interface.
-
-This plugin is designed to restore reliable access to `GPU Hot Spot` together with `GPU Core` and `GPU Memory Junction`, so FanControl can build GPU cooling curves from the hottest point of the card, either as a single control metric or combined with other temperatures.
+It provides those temperatures directly inside FanControl without depending on GPU-Z, HWMonitor or other monitoring tools running permanently in the background.
 
 <p align="center">
   <img src="docs/images/fancontrol-curves-preview.png" alt="FanControl using VRAM, Core and Hot Spot sensors with a mixed curve" width="1200">
@@ -66,6 +62,7 @@ This plugin combines both paths:
 ### Current status
 
 - Validated on `NVIDIA GeForce RTX 5090`
+- Tested on a `GeForce GTX 1060 Laptop GPU`, where `GPU Core` and `GPU Hot Spot` are available but `GPU Memory Junction` is not exposed by the hardware
 - `GPU Hot Spot` matches `HWMonitor 1.65.1`
 - PCIe device/function auto-detection is implemented, so the plugin is not limited to `bus:device:function = xx:00.0`
 
@@ -79,6 +76,10 @@ This plugin combines both paths:
   - `GPU Core`: supported
   - `GPU Memory Junction`: supported
   - `GPU Hot Spot`: uses the NVAPI thermal sensor path
+- `GTX 1060 Laptop`
+  - `GPU Core`: supported
+  - `GPU Hot Spot`: supported
+  - `GPU Memory Junction`: not exposed on this hardware
 - `Older NVIDIA generations`
   - The plugin includes fallback logic, but they have not been validated on enough hardware to claim full support yet.
 
@@ -151,11 +152,7 @@ Publishing notes are available in [docs/GITHUB-PUBLISHING.md](C:/Users/DEEP/Docu
 - `GPU Memory Junction`
 - `GPU Hot Spot`
 
-El objetivo del proyecto es ofrecer estas temperaturas directamente en FanControl, sin depender de GPU-Z, HWMonitor u otras herramientas de monitorización ejecutándose de forma permanente en segundo plano.
-
-Con las NVIDIA RTX 50, NVIDIA retiró de hecho el acceso normal a la métrica de `GPU Hot Spot`. Las herramientas de monitorización dejaron de poder exponerla por la vía habitual, y las soluciones que aparecieron después procedieron de iniciativas de la comunidad, no de una interfaz oficialmente estable.
-
-Este plugin busca recuperar un acceso fiable a `GPU Hot Spot` junto con `GPU Core` y `GPU Memory Junction`, de modo que FanControl pueda construir curvas de refrigeración de la GPU a partir del punto más caliente de la tarjeta, bien como criterio único, bien combinado con otras temperaturas.
+Ofrece esas temperaturas directamente en FanControl, sin depender de GPU-Z, HWMonitor u otras herramientas de monitorización ejecutándose de forma permanente en segundo plano.
 
 <p align="center">
   <img src="docs/images/fancontrol-curves-preview.png" alt="FanControl usando sensores de VRAM, Core y Hot Spot con una curva combinada" width="1200">
@@ -192,6 +189,7 @@ Este plugin combina ambas fuentes:
 ### Estado actual
 
 - Validado en `NVIDIA GeForce RTX 5090`
+- Probado en una `GeForce GTX 1060 Laptop GPU`, donde `GPU Core` y `GPU Hot Spot` están disponibles, pero `GPU Memory Junction` no la expone el hardware
 - `GPU Hot Spot` coincide con `HWMonitor 1.65.1`
 - La autodetección de dispositivo y función PCIe ya está implementada, así que el plugin no depende de `bus:device:function = xx:00.0`
 
@@ -205,6 +203,10 @@ Este plugin combina ambas fuentes:
   - `GPU Core`: compatible
   - `GPU Memory Junction`: compatible
   - `GPU Hot Spot`: usa la ruta térmica de NVAPI
+- `GTX 1060 Laptop`
+  - `GPU Core`: compatible
+  - `GPU Hot Spot`: compatible
+  - `GPU Memory Junction`: no la expone este hardware
 - `Generaciones anteriores de NVIDIA`
   - El plugin incluye lógica de fallback, pero todavía no se ha validado en suficiente hardware como para asegurar una compatibilidad total.
 
